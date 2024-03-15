@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/fonts/fontawesome-webfont.svg">
+    <title>About me</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: poppins;
+
+        }
+
+        body {
+            font-family: poppins, sans-serif;
+        }
+
+        nav {
+            background: rgba(173, 40, 40, 0.3);
+            height: 80px;
+            width: 100%;
+        }
+
+        label.logo {
+            color: white;
+            font-size: 35px;
+            line-height: 80px;
+            padding: 0 100px;
+            font-weight: lighter;
+        }
+
+
+        nav ul {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 5px;
+        }
+
+        nav ul li a {
+            color: rgb(29, 22, 22);
+            font-size: 17px;
+            padding: 7px 13px;
+            border-radius: 3px;
+            text-transform: uppercase;
+        }
+
+        nav ul li a:hover {
+            background: rgba(173, 40, 40, 0.3);
+            transition: .5s;
+            color: black;
+        }
+
+        a:hover nav ul li a {
+            color: black;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 33px 150px;
+        }
+
+        .firstsection>div {
+            width: 50%;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+            margin-top: 120px;
+            height: 260px;
+            border-radius: 10px;
+            background-color: rgba(216, 121, 121, 0.3);
+            box-shadow: 9px 10px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeInUp 2s ease;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes fadeInRight {
+            0% {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0px);
+            }
+        }
+
+
+        .rightsection img {
+            width: 60%;
+            margin: 28px 153px;
+            border-radius: 10px;
+            box-shadow: 9px 10px 20px rgba(0, 0, 0, 0.2);
+            animation: fadeInRight 2s ease;
+        }
+
+        .name {
+            color: rgba(173, 40, 40, 0.3);
+        }
+
+        h2 {
+            padding: 100px 43%;
+            margin-bottom: -114px;
+            font-size: xxx-large;
+        }
+
+        h3 {
+            font-size: 40px;
+            margin-bottom: 15px;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        #element {
+            color: black;
+            font-size: x-large;
+            font-weight: 400;
+        }
+
+        .bottom-bar p {
+            color: rgba(186, 38, 38, 0.3);
+            margin: 0;
+            font-size: 16px;
+            padding: 7px;
+            background-color: rgb(252, 252, 252);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label for="" class="logo"><em>Usman</em></label>
+        <ul>
+            <li><a class="Active" href="/index.html">Home</a></li>
+            <li><a href="/about/about.html">About</a></li>
+            <li><a href="/contact/contact.html">Contact Us</a></li>
+            <li><a href="/signup or login/login.html">Login</a></li>
+            <li><a href="/signup or login/signup.html">signup</a></li>
+        </ul>
+    </nav>
+    <h2>About Me</h2>
+    <section class="firstsection">
+
+        <div class="leftsection">
+            <h3> Usman
+                <span class="name">Chaudhary</span>
+            </h3>
+            <span id="element"></span>
+        </div>
+
+        <div class="rightsection">
+            <img src="/img/1 (1).jpg" alt="picture">
+        </div>
+    </section>
+    <div class="bottom-bar">
+        <p>&copy; 2024 Chaudhary Brothers & company. All rights Reserved</p>
+    </div>
+</body>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+        strings: ['<i>Hii</i>', 'My name is Usman Chaudhary. Let me introduced my self. I am 22 years old boy graduated from UAF. This website is created by me with the help of HTML,CSS and Js. Now I am looking for Job to start my journey.', 'kya dhyk rha puppo.... GIYAN', 'GIYAN hn app'],
+        typeSpeed: 40,
+    });
+</script>
+
+</html>

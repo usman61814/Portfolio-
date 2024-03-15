@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/font-awesome-4.7.0/fonts/fontawesome-webfont.svg">
+    <style>
+        body {
+            background-color: #fff;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        .container {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            padding-top: 100px;
+        }
+
+        form {
+            background: rgba(173, 40, 40, 0.3);
+            padding: 3rem;
+            height: 410px;
+            width: 370px;
+            border-radius: 20px;
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            /* -webkit-backdrop-filter: blur(10px); */
+            backdrop-filter: blur(10px);
+            box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: relative;
+            transition: all 0.2s ease-in-out;
+        }
+
+        h2 {
+            font-weight: 550;
+            color: #190606;
+            opacity: 0.7;
+            font-size: 1.4rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        form p {
+            font-weight: 500;
+            /* color: #190606; */
+            opacity: 0.7;
+            font-size: large;
+            margin-top: 0;
+            margin-bottom: 40px;
+            /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+            padding-top: 30px;
+        }
+
+        form a {
+            text-decoration: none;
+            color: #0c0404;
+            font-size: 15px;
+        }
+
+        form a:hover {
+            text-shadow: 2px 2px 6px #d8cfcf;
+        }
+
+        form a:active {
+            text-shadow: none;
+        }
+
+        form input {
+            background: transparent;
+            width: 200px;
+            padding: 1em;
+            margin-bottom: 2em;
+            border: none;
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 5000px;
+            /* -webkit-backdrop-filter: blur(5px); */
+            backdrop-filter: blur(5px);
+            box-shadow: 4px 4px 60px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-family: sans-serif;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
+            /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); */
+        }
+
+        form input::placeholder {
+            color: white;
+        }
+
+        form input:hover {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 4px 4px 60px 8px rgba(198, 193, 193, 0.2);
+        }
+
+        form input[type=email]:focus,
+        form input[type=password]:focus {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        form input[type=button] {
+            /* margin-top: 10px; */
+            width: 150px;
+            font-size: small;
+        }
+
+        form input[type=button]:hover {
+            cursor: pointer;
+        }
+
+        form input[type=button]:active {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+       
+        .need:hover {
+            text-decoration: underline;
+            color: black;
+
+        }
+    </style>
+    </style>
+</head>
+
+<body>
+    <nav>
+        <label for="" class="logo"><em>Usman</em></label>
+    </nav>
+    <div class="container">
+        <form action="">
+            <h2>Reset your password </h2>
+            <p> If the account exists, we'll email you instructions to reset the password.</p>
+            <input type="email" placeholder="Email" required><br>
+
+            <input type="submit" value="Reset password"><br>
+            <a class="need" href="/signup or login/login.html">Return to login</a>
+        </form>
+    </div>
+</body>
+
+</html>
